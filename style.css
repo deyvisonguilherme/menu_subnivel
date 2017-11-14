@@ -1,0 +1,58 @@
+body, 
+.menu, .sub-menu {
+    margin: 0;
+    padding: 0;
+}
+.cabecalho{
+    height: 75px;
+    background: url('img/banner-superior.jpg') no-repeat #4EB3DF;
+}
+.clearfix:after{
+    content: '.';
+    display: block;
+    clear: both;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+    visibility: hidden;
+    overflow: hidden;
+}
+.menu, .sub-menu {
+    list-style: none;
+    background: WhiteSmoke;
+}
+.sub-menu {
+    background: #ccc;
+}
+.menu a {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    color: DarkSlateGray;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+.menu li {
+    position: relative;
+}
+.menu > li {
+    float: left;
+}
+.menu > li:hover {
+    background: #ccc;
+}
+.menu li:hover > .sub-menu {
+    display: block;
+}
+.sub-menu {
+    display: none;
+    position: absolute;
+    min-width: 190px;
+}
+.sub-menu li:hover {
+    background: rgb(189, 189, 189);
+}
+.sub-menu .sub-menu {
+    top: 0;
+    left: 100%;
+}
